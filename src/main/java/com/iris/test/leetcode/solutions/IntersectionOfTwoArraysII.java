@@ -31,7 +31,7 @@ public class IntersectionOfTwoArraysII {
   public int[] intersect(int[] nums1, int[] nums2) {
     List<Integer> numsList1 = Arrays.stream(nums1).boxed().collect(Collectors.toList());
     List<Integer> numsList2 = Arrays.stream(nums2).boxed().collect(Collectors.toList());
-    List<Integer> result = new ArrayList<>();
+    List<Integer> result = new ArrayList<Integer>();
 
     Collections.sort(numsList1);
     Collections.sort(numsList2);
